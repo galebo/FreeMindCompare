@@ -24,6 +24,6 @@ public class ProcessFile {
 			String string =  iterator.next();
 			out_lines.add(StringEscapeUtils.unescapeHtml(string.replaceAll("FOLDED=\"true\" ", "")));
 		}
-		FileUtils.writeLines(new File("./"+file.getName()+".txt"),out_lines);
+		FileUtils.writeLines(new File("./"+file.getName()+".tmp"),out_lines);
 	}
 }
